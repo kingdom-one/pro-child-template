@@ -28,6 +28,10 @@ jobs:
     deploy:
         needs: bundle
         runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            packages: write
+            deployments: write
 
         steps:
             - name: Checkout code

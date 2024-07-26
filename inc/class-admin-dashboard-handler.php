@@ -22,7 +22,7 @@ class Admin_Dashboard_Handler {
 	}
 
 	/**
-	 * Remove the dashboard widgets
+	 * Remove the dashboard widgets.
 	 */
 	public function remove_dashboard_widgets() {
 		$meta_boxes = array(
@@ -57,14 +57,14 @@ class Admin_Dashboard_Handler {
 	}
 
 	/**
-	 * Add a new widget to the dashboard using a custom function
+	 * Add a new widget to the dashboard using a custom function.
 	 */
 	public function add_dashboard_widgets() {
 		$the_title = get_bloginfo( 'name' );
 		wp_add_dashboard_widget(
-			'k1_dashboard_welcome_widget', // Widget slug
-			'Welcome to ' . $the_title, // Widget title
-			array( $this, 'k1_dashboard_welcome_widget_function' ) // Function name to display the widget
+			'k1_dashboard_welcome_widget', // Widget slug.
+			'Welcome to ' . $the_title, // Widget title.
+			array( $this, 'k1_dashboard_welcome_widget_function' ) // Function name to display the widget.
 		);
 	}
 
