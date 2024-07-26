@@ -33,6 +33,6 @@ A Template repo to help spin up custom child themes for clients quickly.
 
 # Changelog
 
-## 0.1.2
+## 0.1.0
 
--   Init!
+-   Init repo!
