@@ -32,7 +32,7 @@ class Theme_Init {
 		);
 
 		foreach ( $files as $file => $class ) {
-			require_once get_theme_file_path( "/inc/class-{$file}.php" );
+			require_once get_theme_file_path( "/includes/class-{$file}.php" );
 			if ( $class ) {
 				$class = "KingdomOne\\{$class}";
 				new $class();

@@ -30,3 +30,9 @@ A Template repo to help spin up custom child themes for clients quickly.
 1. Make sure Pro Theme is installed!
 2. Download this zip from Github
 3. Install to the Site!
+
+# Changelog
+
+## 0.1.2
+
+-   Init!
