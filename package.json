@@ -26,5 +26,8 @@
 		"lighthouse": "^12.1.0",
 		"puppeteer-core": "^22.13.1",
 		"ws": "^8.18.0"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.1"
 	}
 }

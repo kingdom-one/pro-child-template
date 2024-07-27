@@ -23,7 +23,7 @@
 		"typography": {
 			"customFontSize": true,
 			"defaultFontSizes": false,
-			"lineHeight": false,
+			"lineHeight": true,
 			"dropCap": false,
 			"fluid": true,
 			"fontStyle": true,
@@ -32,19 +32,50 @@
 			"textDecoration": true,
 			"textTransform": true,
 			"fontSizes": [
-				{ "slug": "xs", "size": "0.8rem", "name": "XS" },
-				{ "slug": "base", "size": "1rem", "name": "Base" },
-				{ "slug": "small", "size": "1.25rem", "name": "Small (H6)" },
-				{ "slug": "medium", "size": "1.56rem", "name": "Medium (H5)" },
+				{
+					"slug": "xs",
+					"size": "clamp(0.8rem, 0.941176vi + 0.56rem, 1.2rem)",
+					"name": "XS"
+				},
+				{
+					"slug": "base",
+					"size": "clamp(1rem, 1.176471vi + 0.71rem, 1.5rem)",
+					"name": "Base"
+				},
+				{
+					"slug": "small",
+					"size": "clamp(1.25rem, 1.482353vi + 0.88rem, 1.88rem)",
+					"name": "Small (H6)"
+				},
+				{
+					"slug": "medium",
+					"size": "clamp(1.56rem, 1.835294vi + 1.1rem, 2.34rem)",
+					"name": "Medium (H5)"
+				},
 				{
 					"slug": "large",
-					"size": "1.95",
+					"size": "clamp(1.95rem, 2.305882vi + 1.37rem, 2.93rem)",
 					"name": "Large (H4)"
 				},
-				{ "slug": "xl", "size": "2.44rem", "name": "XL (H3)" },
-				{ "slug": "2xl", "size": "3.05rem", "name": "3XL (H2)" },
-				{ "slug": "3xl", "size": "3.81rem", "name": "3XL (H1)" }
+				{
+					"slug": "xl",
+					"size": "clamp(2.44rem, 2.870588vi + 1.72rem, 3.66rem)",
+					"name": "XL (H3)"
+				},
+				{
+					"slug": "2xl",
+					"size": "clamp(3.05rem, 3.6vi + 2.15rem, 4.58rem)",
+					"name": "3XL (H2)"
+				},
+				{
+					"slug": "3xl",
+					"size": "clamp(3.81rem, 4.494118vi + 2.69rem, 5.72rem)",
+					"name": "3XL (H1)"
+				}
 			]
+		},
+		"custom": {
+			"lineHeight": "calc(2px + 2ex + 2px)"
 		}
 	},
 	"styles": {
@@ -53,9 +84,25 @@
 		},
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--base)",
-			"lineHeight": "calc(2px + 2ex + 2px)"
+			"lineHeight": "var(--wp--custom--line-height)"
+		},
+		"blocks": {
+			"core/paragraph": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--base)",
+					"lineHeight": "var(--wp--custom--line-height)"
+				}
+			},
+			"core/heading": {
+				"typography": {
+					"lineHeight": "var(--wp--custom--line-height)"
+				}
+			}
 		},
 		"elements": {
+			"heading": {
+				"lineHeight": "var(--wp--custom--line-height)"
+			},
 			"h1": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--3-xl)"
