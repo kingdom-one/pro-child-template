@@ -27,8 +27,40 @@ $headings: (
 	"h6": --fs-s,
 );
 
+$utilities: (
+	"fs-1": --fs-xxxl,
+	"fs-2": --fs-xxl,
+	"fs-3": --fs-xl,
+	"fs-4": --fs-l,
+	"fs-5": --fs-m,
+	"fs-6": --fs-s,
+);
+@each $utility, $size in $utilities {
+	.#{$utility} {
+		font-size: var($size) !important;
+
+		& :is(h1, h2, h3, h4, h5, h6) {
+			font-size: var($size) !important;
+		}
+	}
+}
+
+@each $heading, $size in $headings {
+	#{$heading},
+	.#{$heading} {
+		font-size: var($size);
+		line-height: var(--line-height);
+	}
+}
+
+p,
+li {
+	font-size: var(--fs-base);
+	line-height: var(--line-height);
+}
+
 .x-root .x-site {
-	.x-text {
+	.x-text-headline {
 		@each $heading, $size in $headings {
 			#{$heading} {
 				font-size: var($size);
@@ -36,11 +68,9 @@ $headings: (
 			}
 		}
 	}
-	@each $heading, $size in $headings {
-		#{$heading},
-		.#{$heading} {
-			font-size: var($size);
-			line-height: var(--line-height);
-		}
+
+	.x-content {
+		font-size: var(--fs-base);
+		line-height: var(--line-height);
 	}
 }

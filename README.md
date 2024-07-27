@@ -33,6 +33,11 @@ A Template repo to help spin up custom child themes for clients quickly.
 
 # Changelog
 
+## 0.1.1
+
+-   Add typography that affects both Cornerstone prefixed elements and regular elements.
+-   Init bootstrap sass partials to figure out what to break apart / borrow for minimal utility class generation.
+
 ## 0.1.0
 
 -   Init repo!
