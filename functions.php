@@ -8,11 +8,6 @@
  */
 
 /**
- * Enqueue the parent stylesheet
- */
-add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
-
-/**
  * Load the Theme Init class
  */
 require_once get_stylesheet_directory() . '/includes/class-theme-init.php';
