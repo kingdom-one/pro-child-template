@@ -33,6 +33,10 @@ A Template repo to help spin up custom child themes for clients quickly.
 
 # Changelog
 
+## 0.2.1
+
+-   bug fixes
+
 ## 0.2.0
 
 -   Added reduced Bootstrap Utility classes (opt-in) CSS file
