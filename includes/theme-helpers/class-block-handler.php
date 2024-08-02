@@ -47,7 +47,7 @@ class Block_Handler {
 	 *
 	 * @return array
 	 */
-	public function hide_block_locking_ui( $settings, $context ): array {
+	public function hide_block_locking_ui( $settings, $context ): array { // phpcs:ignore Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 		$is_admin = current_user_can( 'edit_files' );
 		if ( ! $is_admin ) {
 			$settings['canLockBlocks']      = false;
