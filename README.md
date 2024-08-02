@@ -33,6 +33,10 @@ A Template repo to help spin up custom child themes for clients quickly.
 
 # Changelog
 
+## 0.3.1
+
+-   Update `theme.json` to load proper line heights for headings in the Editor.
+
 ## 0.3.0
 
 -   Remove Core Patterns
